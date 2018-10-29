@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <FrameLayout
+        android:id="@+id/vRoot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/vFooter"
+        android:layout_below="@+id/imgHeader"
+        android:layout_marginBottom="-10dp"
+        android:layout_marginTop="-50dp" >
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/imgHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/top" />
+
+    <!-- Objects View -->
+
+    <include
+        android:id="@+id/vObjectsPicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/vFooter"
+        android:layout_below="@+id/imgHeader"
+        android:layout_centerHorizontal="true"
+        layout="@layout/objects_view" />
+
+    <!-- Share View -->
+
+    <include
+        android:id="@+id/vShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/vFooter"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/imgHeader"
+        android:layout_marginTop="-30dp"
+        layout="@layout/share_view" />
+
+    <!-- Bottom panel of various actions -->
+
+    <include
+        android:id="@+id/vFooter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/bottom_photo_booth_view" />
+
+</RelativeLayout>

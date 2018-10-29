@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Photo Booth</string>
+    <string name="play_store_link">https://market.android.com/details?id=com.photobooth.photobooth</string>
+
+    <!-- Error Messages -->
+    <string name="network_error_title">Service Error</string>
+    <string name="network_error_msg">Please check your internet connection.</string>
+    <string name="message">Message</string>
+    <string name="setup_photo">Resize and setup main image, after that press "Done" button.</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="photo_library">Photo Library</string>
+    <string name="scale">Scale</string>
+    <string name="objects">Objects</string>
+    <string name="change">Change</string>
+    <string name="back">Back</string>
+    <string name="remove">Remove</string>
+    <string name="done">Done</string>
+    <string name="save">Save</string>
+    <string name="photo_saved">Photo saved to SDCard</string>
+    <string name="photo_not_saved">Error occured. Please try later</string>
+    <string name="lower">Lower</string>
+    <string name="upper">Upper</string>
+
+    <!-- Facebook -->
+    <string name="facebook_photo_uploaded_successfully">Photo has been successfully uploaded to Facebook</string>
+    <string name="facebook_uploading_photo">Uploading photo to Facebook...</string>
+
+    <!-- Twitter -->
+    <string name="twitter_photo_uploaded_successfully">Photo has been successfully uploaded to Twitter</string>
+    <string name="twitter_photo_upload_error">Error occured! Please try again later</string>
+    <string name="twitter_uploading_photo">Uploading photo to Twitter...</string>
+
+</resources>

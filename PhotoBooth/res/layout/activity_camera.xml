@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <SurfaceView
+        android:id="@+id/surfaceView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/vFooter"
+        android:layout_below="@+id/imgHeader"
+        android:layout_marginBottom="-10dp"
+        android:layout_marginTop="-50dp" />
+
+    <ImageView
+        android:id="@+id/imgHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/top" />
+
+    <RelativeLayout
+        android:id="@+id/vFooter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imgCapture"
+            android:scaleType="fitXY"
+            android:src="@drawable/bottom" />
+
+        <ImageView
+            android:id="@+id/imgCapture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:clickable="true"
+            android:onClick="takePhotoClick"
+            android:src="@drawable/bottom_camera" />
+
+        <ImageView
+            android:id="@+id/imgCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/cancel_btn"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imgCameraMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/imgHeader"
+        android:layout_marginRight="10dp"
+        android:clickable="true"
+        android:onClick="cameraModeClick"
+        android:src="@drawable/email_btn_normal" />
+
+    <ImageView
+        android:id="@+id/imgFlashMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/imgCameraMode"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:onClick="flashModeClick"
+        android:src="@drawable/twitter_btn_normal" />
+
+</RelativeLayout>

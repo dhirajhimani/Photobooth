@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent" >
+
+    <View
+        android:id="@+id/vBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/shareViewButtons"
+        android:layout_alignRight="@+id/shareViewButtons"
+        android:layout_alignTop="@+id/shareViewButtons"
+        android:layout_marginLeft="-2dp"
+        android:layout_marginRight="-3dp"
+        android:layout_marginTop="-1dp"
+        android:background="@drawable/box" />
+
+    <LinearLayout
+        android:id="@+id/shareViewButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:paddingBottom="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="5dp" >
+
+        <ImageView
+            android:id="@+id/imgInstagram"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:onClick="instagramClick"
+            android:src="@drawable/btn_instagram"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/imgTwitter"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:onClick="twitterClick"
+            android:src="@drawable/btn_twitter" />
+
+        <ImageView
+            android:id="@+id/imgFacebook"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:onClick="facebookClick"
+            android:src="@drawable/btn_facebook" />
+
+        <ImageView
+            android:id="@+id/imgEMail"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:onClick="emailClick"
+            android:src="@drawable/btn_email" />
+
+        <ImageView
+            android:id="@+id/imgSave"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:onClick="saveClick"
+            android:src="@drawable/btn_save" />
+    </LinearLayout>
+
+</RelativeLayout>

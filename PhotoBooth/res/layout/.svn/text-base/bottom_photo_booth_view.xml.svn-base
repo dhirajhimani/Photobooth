@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imgHelmet"
+        android:scaleType="fitXY"
+        android:src="@drawable/bottom" />
+
+    <!-- Left buttons -->
+
+    <ImageView
+        android:id="@+id/imgScale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:clickable="true"
+        android:onClick="scaleClick"
+        android:paddingTop="5dp"
+        android:src="@drawable/scale_btn"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/imgDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:clickable="true"
+        android:onClick="doneClick"
+        android:paddingTop="5dp"
+        android:src="@drawable/done_btn"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/imgDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/imgDone"
+        android:clickable="true"
+        android:onClick="deleteClick"
+        android:paddingTop="5dp"
+        android:src="@drawable/delete_btn"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/imgNew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:clickable="true"
+        android:onClick="newClick"
+        android:paddingTop="5dp"
+        android:src="@drawable/new_btn"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/imgEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/imgNew"
+        android:clickable="true"
+        android:onClick="editClick"
+        android:paddingTop="5dp"
+        android:src="@drawable/edit_btn"
+        android:visibility="visible" />
+
+    <!-- Center button -->
+
+    <ImageView
+        android:id="@+id/imgHelmet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:onClick="helmetClick"
+        android:src="@drawable/bottom_helmet" />
+
+    <!-- Right buttons -->
+
+    <ImageView
+        android:id="@+id/imgChange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="7dp"
+        android:clickable="true"
+        android:onClick="changeClick"
+        android:paddingTop="5dp"
+        android:src="@drawable/change_btn"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/imgCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/cancel_btn"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/imgRaise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/imgLower"
+        android:clickable="true"
+        android:onClick="raiseClick"
+        android:paddingTop="5dp"
+        android:src="@drawable/raise_btn"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/imgLower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:clickable="true"
+        android:onClick="lowerClick"
+        android:paddingTop="5dp"
+        android:src="@drawable/lower_btn"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/imgShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:clickable="true"
+        android:onClick="shareClick"
+        android:paddingTop="5dp"
+        android:src="@drawable/share_btn"
+        android:visibility="visible" />
+
+</RelativeLayout>

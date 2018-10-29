@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <!-- <CheckBox android:id="@+id/enable" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_alignParentTop="true" -->
+        <!-- android:layout_alignParentLeft="true" -->
+        <!-- /> -->
+
+        <TextView
+            android:id="@+id/txtViewUsername"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtViewNumChars"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_toLeftOf="@+id/txtViewNumChars"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/txtViewNumChars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dip"
+            android:text="140"
+            android:textAppearance="?android:attr/textAppearanceLarge" >
+        </TextView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/edit_group"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/etextStatusText"
+                android:layout_width="fill_parent"
+                android:layout_height="150dip"
+                android:layout_alignParentLeft="true"
+                android:enabled="true"
+                android:gravity="top"
+                android:inputType="textMultiLine" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Retweet_group"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnStatusUpdate"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:onClick="btnStatusUpdateClick"
+            android:text="Post" >
+        </Button>
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="btnCancelClick"
+            android:text="Cancel" >
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>

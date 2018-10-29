@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent" >
+
+    <View
+        android:id="@+id/vBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/galleryObjects"
+        android:layout_alignLeft="@+id/radioGroup"
+        android:layout_alignRight="@+id/radioGroup"
+        android:layout_alignTop="@+id/radioGroup"
+        android:layout_marginLeft="-2dp"
+        android:layout_marginRight="-3dp"
+        android:layout_marginTop="-1dp"
+        android:background="@drawable/box" />
+
+    <LinearLayout
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/imgJerseyOP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="changeObjectClick"
+            android:src="@drawable/jersey_selected" />
+
+        <ImageView
+            android:id="@+id/imgHelmetOP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="changeObjectClick"
+            android:src="@drawable/helmet_normal" />
+
+        <ImageView
+            android:id="@+id/imgHatsOP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="changeObjectClick"
+            android:src="@drawable/hats_normal" />
+
+        <ImageView
+            android:id="@+id/imgAccessorysOP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="changeObjectClick"
+            android:src="@drawable/accessorys_normal" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/galleryView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imgBuy"
+        android:layout_alignLeft="@id/radioGroup"
+        android:layout_alignRight="@id/radioGroup"
+        android:layout_below="@id/radioGroup"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp" >
+
+        <ImageView
+            android:id="@+id/imgArrowLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/arrow_left" />
+
+        <com.photobooth.view.MyGalleryView
+            android:id="@+id/galleryObjects"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:layout_toLeftOf="@+id/imgArrowRight"
+            android:layout_toRightOf="@id/imgArrowLeft"
+            android:clipChildren="true"
+            android:spacing="10dp"
+            android:unselectedAlpha="0" />
+
+        <ImageView
+            android:id="@+id/imgArrowRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/arrow_right" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imgBuy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:clickable="true"
+        android:onClick="buyClick"
+        android:paddingBottom="0dp"
+        android:src="@drawable/buy"
+        android:visibility="invisible" />
+
+</RelativeLayout>

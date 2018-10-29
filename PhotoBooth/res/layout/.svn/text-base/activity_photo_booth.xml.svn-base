@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <FrameLayout
+        android:id="@+id/vRoot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/vActions" >
+    </FrameLayout>
+
+    <!-- Gallery of objects -->
+
+    <Gallery
+        android:id="@+id/galleryObjects"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_above="@+id/vActions"
+        android:background="#88000000"
+        android:spacing="20dp"
+        android:unselectedAlpha="0.7" />
+
+    <!-- Bottom panel of various actions -->
+
+    <RelativeLayout
+        android:id="@+id/vActions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp" >
+
+        <Button
+            android:id="@+id/btnDone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:onClick="doneClick"
+            android:text="@string/done" />
+
+        <!-- Row 1 -->
+
+        <Button
+            android:id="@+id/btnChange"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/btnObjects"
+            android:onClick="changeClick"
+            android:text="@string/change" />
+
+        <Button
+            android:id="@+id/btnObjects"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:onClick="objectsClick"
+            android:text="@string/objects" />
+
+        <Button
+            android:id="@+id/btnRemove"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/btnObjects"
+            android:onClick="removeClick"
+            android:text="@string/remove" />
+
+        <!-- Row 2 -->
+
+        <Button
+            android:id="@+id/btnLower"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnChange"
+            android:layout_toLeftOf="@+id/btnUpper"
+            android:onClick="lowerClick"
+            android:text="@string/lower" />
+
+        <Button
+            android:id="@+id/btnUpper"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnChange"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:onClick="upperClick"
+            android:text="@string/upper" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnChange"
+            android:layout_toRightOf="@id/btnUpper"
+            android:onClick="saveClick"
+            android:text="@string/save" />
+    </RelativeLayout>
+
+</RelativeLayout>
